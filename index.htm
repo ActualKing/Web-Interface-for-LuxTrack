@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LuxTrack - умный измерительный прибор для мониторинга освещённости в системах умного дома">
+    <meta name="keywords" content="освещённость, датчик света, умный дом, мониторинг">
+    <title>LuxTrack - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>🌞 LuxTrack</h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link active">Главная</a>
+                    <a href="device.html" class="nav-link">Прибор</a>
+                    <a href="principle.html" class="nav-link">Принцип работы</a>
+                    <a href="examples.html" class="nav-link">Примеры</a>
+                    <a href="comparison.html" class="nav-link">Сравнение</a>
+                    <a href="installation.html" class="nav-link">Установка</a>
+                    <a href="dashboard.html" class="nav-link">Панель управления</a>
+                    <a href="settings.html" class="nav-link">Настройки</a>
+                    <a href="data.html" class="nav-link">Данные</a>
+                    <a href="analytics.html" class="nav-link">Аналитика</a>
+                    <a href="reports.html" class="nav-link">Отчёты</a>
+                    <a href="support.html" class="nav-link">Поддержка</a>
+                    <a href="docs.html" class="nav-link">Документация</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="news.html" class="nav-link">Новости</a>
+                    <a href="updates.html" class="nav-link">Обновления</a>
+                    <a href="contact.html" class="nav-link">Контакты</a>
+                    <a href="pricing.html" class="nav-link">Цены</a>
+                    <a href="downloads.html" class="nav-link">Загрузки</a>
+                    <a href="about.html" class="nav-link">Об авторе</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Умный мониторинг освещённости с LuxTrack</h1>
+                    <p class="hero-subtitle">
+                        Современный измерительный прибор для контроля уровня освещённости 
+                        в системах умного дома. Точные измерения, удобная веб-панель управления 
+                        и автоматизация освещения.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="device.html" class="btn btn-primary">Узнать больше</a>
+                        <a href="dashboard.html" class="btn btn-secondary">Демо панель</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="device-mockup">
+                        <div class="device-screen">
+                            <div class="lux-display">
+                                <span class="lux-value" id="luxValue">78</span>
+                                <span class="lux-unit">lux</span>
+                            </div>
+                            <div class="status-indicator active"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Ключевые возможности</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Точные измерения</h3>
+                        <p>Высокоточный датчик с диапазоном 0.1-100,000 lux и погрешностью менее 3%</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Web-интерфейс</h3>
+                        <p>Удобная панель управления с графиками, настройками и аналитикой</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Автоматизация</h3>
+                        <p>Настройка пороговых значений и автоматическое управление освещением</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Мобильность</h3>
+                        <p>Адаптивный интерфейс для управления с любых устройств</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Мониторинг 24/7</h3>
+                        <p>Непрерывный контроль освещённости с историей данных</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Интеграция</h3>
+                        <p>Совместимость с популярными системами умного дома</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="current-data">
+            <div class="container">
+                <h2>Текущие показания</h2>
+                <div class="data-dashboard">
+                    <div class="data-card">
+                        <h3>Освещённость</h3>
+                        <div class="data-value">
+                            <span id="currentLux">78</span>
+                            <span class="unit">lux</span>
+                        </div>
+                        <div class="data-status good">Оптимально</div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Статус датчика</h3>
+                        <div class="sensor-status online">
+                            <div class="status-dot"></div>
+                            Онлайн
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Последнее обновление</h3>
+                        <div class="last-update" id="lastUpdate">
+                            16.09.2025 14:32:15
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-chart">
+            <div class="container">
+                <h2>График освещённости за сутки</h2>
+                <div class="chart-container">
+                    <canvas id="luxChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌞 LuxTrack</h3>
+                    <p>Умный мониторинг освещённости для современного дома</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="device.html">О приборе</a></li>
+                        <li><a href="examples.html">Примеры</a></li>
+                        <li><a href="docs.html">Документация</a></li>
+                        <li><a href="support.html">Поддержка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="about.html">Об авторе</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="pricing.html">Цены</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Связь</h4>
+                    <p>Email: info@luxtrack.com</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LuxTrack. Учебный проект. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Инициализация графика
+        const ctx = document.getElementById('luxChart').getContext('2d');
+        const luxChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['00:00', '03:00', '06:00', '09:00', '12:00', '15:00', '18:00', '21:00'],
+                datasets: [{
+                    label: 'Освещённость (lux)',
+                    data: [12, 8, 45, 180, 320, 250, 150, 85],
+                    borderColor: '#00D4AA',
+                    backgroundColor: 'rgba(0, 212, 170, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Освещённость (lux)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Время'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Анимация значений
+        function animateLuxValue() {
+            const luxValue = document.getElementById('luxValue');
+            const currentLux = document.getElementById('currentLux');
+            const newValue = Math.floor(Math.random() * 100) + 20;
+            
+            luxValue.textContent = newValue;
+            currentLux.textContent = newValue;
+        }
+
+        // Обновление времени
+        function updateLastUpdate() {
+            const lastUpdate = document.getElementById('lastUpdate');
+            const now = new Date();
+            lastUpdate.textContent = now.toLocaleString('ru-RU');
+        }
+
+        // Запуск анимации каждые 5 секунд
+        setInterval(animateLuxValue, 5000);
+        setInterval(updateLastUpdate, 1000);
+
+        // Мобильное меню
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
